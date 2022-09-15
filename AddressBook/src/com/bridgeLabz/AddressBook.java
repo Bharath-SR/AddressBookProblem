@@ -179,7 +179,7 @@ public class AddressBook {
 			    }else {
 			    	System.out.println("Record is Edited Successfully");
 			    }
-			    System.out.println("*************************************");
+			    System.out.println("**************************************");
 			break;
 		}
 		}while(ch!=0);
