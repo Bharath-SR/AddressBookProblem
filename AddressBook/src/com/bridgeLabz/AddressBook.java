@@ -79,6 +79,29 @@ public class AddressBook {
 			System.out.println("5.Search");
 			System.out.println("Choose Your Option To Perform Operations:");
 			ch=inputInt.nextInt();
+			switch(ch) {
+			case 1:
+				System.out.print("Enter Serial Number :  ");
+				int sNo =inputInt.nextInt();
+				System.out.print("Enter first name : ");
+				String firstName =inputString.nextLine();
+				System.out.print("Enter last name :  ");
+				String lastName =inputString.nextLine();
+				System.out.print("Enter address :  ");
+				String address =inputString.nextLine();
+				System.out.print("Enter State :  ");
+				String state =inputString.nextLine();
+				System.out.print("Enter City :  ");
+				String city =inputString.nextLine();
+				System.out.print("Enter ZipCode :  ");
+				int zipcode =inputInt.nextInt();
+				System.out.print("Enter Phone Number :  ");
+				int phone_number =inputInt.nextInt();
+				System.out.print("Enter Email :  ");
+				String e_mail =inputString.nextLine();
+				col.add(new AddressBook(firstName,lastName,address,state,city,zipcode,e_mail,phone_number,sNo));
+			break;
+			}
 			
 
 }while(ch!=0);
