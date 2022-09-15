@@ -120,8 +120,30 @@ public class AddressBook {
 				}
 			break;
 			
+			case 3:
+				boolean available = false;
+				System.out.println("Enter Serial Number to Delete ");
+				sNo=inputInt.nextInt();
+				System.out.println("*************************************");
+			    i = col.iterator();
+			    while(i.hasNext()) {
+			    	AddressBook ab =i.next();
+			    	if(ab.getsNumber() == sNo) {
+			    		i.remove();
+			    		available=true;
+			    	}
+			    }
+			    
+			    if(!available) {
+			    	System.out.println("Record Not Found");
+			    }else {
+			    	System.out.println("Record is Deleted");
+			    }
+			    System.out.println("*************************************");
+			break;
+			
 			case 4:
-			   boolean available = false;
+			    available = false;
 				System.out.println("Enter Serial Number to Edit ");
 				sNo=inputInt.nextInt();
 				System.out.println("*************************************");
